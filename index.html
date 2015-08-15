@@ -1,47 +1,52 @@
 <!DOCTYPE html> 
 <html> 
-<head>
-  <meta charset="UTF-8">	
+<head> 
+	<meta charset="UTF-8">
 	<title>Anchory Restaurant</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
-	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link href="2/ninja-slider.css" rel="stylesheet" type="text/css" />
+	<script src="2/ninja-slider.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
 	<link rel="stylesheet" href="custom.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	<script src="slider.js"></script>
 </head> 
-
 <body> 
-<div data-role="page" id="home" data-theme="c">
-	<div data-role="content">
-	
-		<div id="branding">
-			<h1>Anchory Restaurant </h1>
-		</div>
-		
-		<div  class = "content" data-role="content" >
-			<div class="ui-grid-a">
-			<div class="ui-block-a"><img src = "images/shrimp_escabeche.jpg"></div>
-			<div class="ui-block-b"><img src = "images/salmon.jpg"></div>	
-			<div class="ui-block-a"><p><a href="appetizer.html" data-role="button"> Appetizers</a></p></div>
-			<div class="ui-block-b"><p><a href="maincourse.html" data-role="button"> Main Courses</a></p></div>
-			<div class="ui-block-a"><img src = "images/dessert.jpg"></div>
-			<div class="ui-block-b"><img src = "images/drink.jpg"></div>
-			<div class="ui-block-a"><p><a href="dessert.html" data-role="button">Desserts</a></p></div>
-			<div class="ui-block-b"><p><a href="drink.html" data-role="button"> Drinks</a></p></div>
-			</div>
-		</div>
-		
-		<ul data-role="listview" data-inset="true" >
-		<li><a href="feedback.html" data-transition="slidedown"> <img src="images/feedback.png"/> <h3> Feedback </h3></a></li>
-		<li><a href="restoinfo.html" data-transition="slidedown"> <img src="images/contact.gif"/> <h3> Contact Us </h3></a></li>
-		</ul>
-		<footer data-role="footer"><a href="developer.html">About developer</a></footer>
+
+
+	<div data-role="header"> 
+		<h1>Anchory Restaurant</h1>
 	</div>
+
+	<div id='ninja-slider'>
+            <ul>
+                <li><div data-image="images/info.jpg"></div></li>
+                <li><div data-image="images/info2.jpg"></div></li>
+                <li><div data-image="images/info3.jpg"></div></li>
+                <li><div data-image="images/info4.jpg"></div></li>
+                <li><div data-image="images/info5.jpg"></div></li>
+            </ul>
+        </div>
+	<div  class = "content" data-role="content">
+		<div class="ui-grid-a">
+		
+		<div class="ui-block-b">
+		<p style="color:#7575A3; font-size:35px"><strong>Anchory Restaurant</strong></p>
+		<p style="font-size:18px"><strong>Exciting New Seafood Restaurant </strong></p>
+		<p>800 Bourke Street</p>
+		<p>Docklands VIC 3008</p>		
+		<p>03 9244 6333</p>
+		</div>		
+	</div>
+	<div id="contact_buttons">	
+		<a href="https://www.google.com.au/maps/place/800+Bourke+St,+Docklands+VIC+3008/@-37.8189492,144.9456908,17z/data=!4m2!3m1!1s0x6ad65d5b833c8461:0x572d4d28404a1d5f" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	
+		<a href="tel:0392446333"  data-role="button" data-icon="tel"> Call us </a>	
+	</div>	
+</div>	
+
 
 </div><!-- /page -->
 </body>
-</html>
+</html> 
